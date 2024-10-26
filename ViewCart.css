@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/cart-background.jpg'); /* Set your cart background image */
+    background-size: cover;
+    color: #222;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color:   #2a676b;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    color: black;
+
+}
+#navbar {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    border-color: black;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c0c79;
+    transition: 0.3s ease;
+}
+#nav h2 {
+    color: white;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: plum;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: pink;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+section {
+    text-align: center;
+    padding: 20px;
+}
+
